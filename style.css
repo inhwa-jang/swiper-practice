@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  height: 100vh;
+  cursor: pointer;
+}
+
+.slider .bg1 {
+  background-image: url(./img/spring.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slider .bg2 {
+  background-image: url(./img/summer.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slider .bg3 {
+  background-image: url(./img/fall.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slider .bg4 {
+  background-image: url(./img/winter.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.slider .swiper-slide span {
+  opacity: 0;
+  margin-top: -150px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.slider .swiper-slide p {
+  opacity: 0;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.slider .swiper-slide div {
+  opacity: 0;
+  font-size: 14px;
+}
+
+.slider .swiper-slide.swiper-slide-active span{
+  animation: text 1s .2s both;
+}
+
+.slider .swiper-slide.swiper-slide-active p{
+  animation: text 1s .5s both;
+}
+
+.slider .swiper-slide.swiper-slide-active div{
+  animation: text 1s .8s both;
+}
+@keyframes text {
+  0% {
+    opacity: 0; 
+    tranform: translateY(30px);
+  }
+  100% {
+    opacity:1; 
+    transform: translateY(0);
+  }
+}
